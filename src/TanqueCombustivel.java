@@ -1,4 +1,4 @@
-public class TanqueCombustivel {
+public class TanqueCombustivel implements ITanqueCombustivel{
 
     private TipoCombustivel tipoCombustivel;
     private int capacidade;

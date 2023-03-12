@@ -1,10 +1,9 @@
-public class Motor {
-
+public class MotorBasico implements IMotor {
     private TipoCombustivel tipoMotor;
     private int consumo; // em quilometros por unidade. Ex: Km/Lt
     private int quilometragem;
 
-    public Motor(TipoCombustivel tipoMotor, int consumo) {
+    public MotorBasico(TipoCombustivel tipoMotor, int consumo) {
         this.tipoMotor = tipoMotor;
         this.consumo = consumo;
     }
@@ -22,7 +21,7 @@ public class Motor {
     }
 
     public int combustivelNecessario(int distancia) {
-        return distancia / consumo;
+        return distancia / getConsumo();
     }
 
     public void percorre(int distancia) {
